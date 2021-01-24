@@ -1,0 +1,37 @@
+1. Sign Up
+URL: http://localhost:8080/api/auth/signup
+Request:
+{
+	"username":"babla",
+	"password":"123456",
+	"email":"babla@gmail.com",
+	"role":["admin"]
+}
+Response:
+{
+    "message": "User registered successfully!"
+}
+
+2. SignIn
+URL: http://localhost:8080/api/auth/signin
+Request:
+{
+    "username": "babla",
+    "password": "123456"
+}
+Response:
+{
+    "id": 1,
+    "username": "babla",
+    "email": "babla@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJiYWJsYSIsImlhdCI6MTYxMTQ4NDQ3NywiZXhwIjoxNjExNTcwODc3fQ.igX9CVXWCi7JHjHnK-XM7vE3zCuf8GjbLMG7Z9kXYhcpttr10OPIyqiPtvZpHyPZ4KzrjISGMgiAnAHw711MQA",
+    "tokenType": "Bearer"
+}
+
+3. User
+URL: http://localhost:8080/api/test/user
+Request: N/A
+Response: User Content.
